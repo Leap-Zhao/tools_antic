@@ -1,0 +1,9 @@
+"在mac下的alias设置如下:"
+
+alias ls='ls -G'
+alias ll='ls -l'
+
+其它说明: ls -G 为mac下为ls配置颜色的选项,在linux下为--color=tty,而mac下无--color,有-G来以颜色区分
+
+
+"在其它linux的设置如下:"
