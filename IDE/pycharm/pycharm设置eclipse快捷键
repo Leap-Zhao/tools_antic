@@ -12,6 +12,7 @@ shift + enter
 ctrl + d
 ctrl + alt + 下
 ctrl + e
+alt + 左或右
 
 
 
@@ -21,7 +22,7 @@ ctrl + e
 2. ctrl + m : Hide all Tool Windows
 3. ctrl + / : pycharm也是注释,但pycharm注释后自动跳到下一行
 4. ctrl + h : eclipse中为搜索文件,不知道一样不一样,先写这
-5. ctrl + alt + 下:
+5. ctrl + alt + 上: pycharm上按了之后并不能复制当前行到上一行
 6. alt  + 上或下: 基本一样,但是pycharm下是把当前行或函数直接上下移动,而eclipse始终是移动一行
 
 
