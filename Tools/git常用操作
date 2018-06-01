@@ -1,0 +1,35 @@
+
+
+git仓库内容:
+1.py
+2.py
+3.py
+
+创建一个分支dev
+git branch dev
+切换到dev分支上
+git checkout dev
+
+情况:
+  第一天我在dev上修改了1.py,添加了4.py,
+  第二天我将master分支上最新内容pull下来,发现有别的同事改了2.py和3.py,而我的dev分支上的2.py和3.py还是原来版本的,怎么将2.py与3.py与最新master保持同步而又不影响我改动的1.py与4.py呢?
+操作:
+  1.切换到dev分支
+  2.执行 git rebase -i master
+  # 该命令将开发分支的修改打包成补丁，然后把开发分支的最初版本与master主分支合并，
+  # 同样因为开发分支的最初版本与master主分支属于同一条分支，所以可以快速合并，
+  # 最后将修改补丁加入合并后的分支中。
+  # 该命令的-i会进入交互模式，交互模式为vim文本文件，在文本文件中，
+  # 除去#注释，从上到下依次为补丁的所有commit记录，按i进入文本编辑模式，
+  # 将commit_id前面的pick修改为不同的关键字会有不同的效果，其中常用的有
+  # p-默认选择该commit，s-将该commit合并到上一个commit中，后续会重新编辑commit记录
+  # f-同s，但commit记录会丢失。
+  # 将多个commit合并成几个精简的commit之后，按ESC进入命令模式，输入:wq保存返回，
+  # 随后进入rebase合并过程。如果遇到冲突，修改冲突提示的文件，使用git add命令，
+  # 然后再git rebase --continue继续合并。
+  # 参考: https://blog.csdn.net/q449560173/article/details/65628261
+注意:
+  如果在 git rebase 过程中出现问题或错误怎么办?
+  执行git rebase --abort 
+  因为rebase将你转移到非分支区域，所以你必须使用git rebase --abort命令中止最后一个rebase，并检出一个分支去分支并开始新的rebound
+  参考:https://stackoverflow.com/questions/8895915/git-rebase-and-deleted-rebasing-branches-causing-interactive-rebase-already-sta?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
