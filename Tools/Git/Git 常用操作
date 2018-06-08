@@ -4,6 +4,25 @@ git仓库内容:
 2.py
 3.py
 
+情况:
+  情况1:第1个小时我对1.py作了一些修改,但还未add,第2个小时我想恢复到修改之前的情况
+  操作:
+    可先用git diff 查看修改的地方,之后确认要恢复时用git checkout -- 1.py
+  情况2:第1个小时我对1.py作了一些修改,并且add到了暂存区,之后我又做了第2次修改,第2个小时我想恢复到刚add到暂存区时的情况
+  操作:
+    同上一种情况
+  参考: 
+    
+情况:
+  我想从远程上拉取一个分支,但我不知道分支的准确名称
+操作1:
+  先用 git branch -v 命令查看所有远程分支
+  再用 git checkout -b 本地分支名x origin/远程分支名x  拉取远程分支并创建本地分支
+操作2:
+  git fetch origin 远程分支名x:本地分支名x
+  使用该方式会在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout。
+参考: https://blog.csdn.net/tterminator/article/details/52225720
+  
 创建一个分支dev
 git branch dev
 切换到dev分支上
@@ -12,7 +31,10 @@ git checkout dev
 情况:
   第一天我在dev上修改了1.py,添加了4.py,
   第二天我将master分支上最新内容pull下来,发现有别的同事改了2.py和3.py,而我的dev分支上的2.py和3.py还是原来版本的,怎么将2.py与3.py与最新master保持同步而又不影响我改动的1.py与4.py呢?
-操作:
+操作1:
+  1.切换到dev分支 git checkout dev
+  2.将master分支上的东西merge到dev分支上  git merge master
+操作2:
   1.切换到dev分支
   2.执行 git rebase -i master
   # 该命令将开发分支的修改打包成补丁，然后把开发分支的最初版本与master主分支合并，
