@@ -1,12 +1,27 @@
 [	
+
+	/*
+		sublime相关的快捷键
+	*/	
+	// 打开侧边栏
+	{ "keys": ["super+b"], "command": "toggle_side_bar" },
+
+
+	/*
+		eclipse快捷键
+	*/
 	{ "keys": ["ctrl+x"], "command": "cut" },
 	{ "keys": ["ctrl+c"], "command": "copy" },
 	{ "keys": ["ctrl+v"], "command": "paste" },
 	{ "keys": ["ctrl+z"], "command": "undo" },
+	{ "keys": ["ctrl+s"], "command": "save" },
+	{ "keys": ["ctrl+a"], "command": "select_all" },
 	// 文件内查找/替换
 	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace"} },
-
-
+	// 单行注释
+	{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false} },
+	// 多行注释
+	{ "keys": ["ctrl+alt+/"], "command": "toggle_comment", "args": { "block": true } },
 
 	//在当前行下插入一行
 	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
@@ -26,7 +41,7 @@
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 	// 全局查找/替换, 在查询结果中双击跳转到匹配位置
 	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-	// 光标移动到指定行
+	// 光标移动到指定行s
 	{ "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	// outline 
 	{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
@@ -55,4 +70,6 @@
 	{ "keys": ["ctrl+shift+f4"], "command": "close_all" },  
 	{ "keys": ["ctrl+shift+y"], "command": "lower_case" },  
 	{ "keys": ["ctrl+shift+x"], "command": "upper_case" }
+
+
 ]
