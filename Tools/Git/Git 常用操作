@@ -12,6 +12,22 @@ git仓库内容:
   操作:
     同上一种情况
   参考: 
+  
+ 
+==========================
+=======分支branch==========
+==========================
+
+
+创建一个分支dev
+git branch dev
+切换到dev分支上
+git checkout dev
+
+情况:
+  我想查看当前所有分支对应远程哪个分支,对应远程是落后还是提前了几个commit,如何做?
+操作:
+  用 git branch -vv
     
 情况:
   我想从远程上拉取一个分支,但我不知道分支的准确名称
@@ -23,10 +39,7 @@ git仓库内容:
   使用该方式会在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout。
 参考: https://blog.csdn.net/tterminator/article/details/52225720
   
-创建一个分支dev
-git branch dev
-切换到dev分支上
-git checkout dev
+
 
 情况:
   第一天我在dev上修改了1.py,添加了4.py,
