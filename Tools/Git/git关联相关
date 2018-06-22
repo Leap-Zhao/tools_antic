@@ -16,6 +16,14 @@
   2.选择你要拉取的分支,比如remotes/origin/dev分支,执行git checkout -b dev origin/dev
   3.你已经切换到本地dev分支并与远程dev分支关联了起来
   4.用git branch -vv 查看当前本地的dev分支关联的是不是origin/dev
+
+情况3:
+  如果用git checkout -b dev创建了本地dev分支,但并未和远程的关联,想把两者关联起来,怎么办?
+操作:
+  1.切换到你已经创建但还未关联的dev本地分支,git branch dev
+  2.在本地上git branch -a查看远程所有分支
+  3.选择你要关联的分支,比如remotes/origin/dev分支,执行git branch --set-upstream-to=origin/dev
   
+
   
   
