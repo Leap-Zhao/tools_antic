@@ -12,6 +12,18 @@ git仓库内容:
   操作:
     同上一种情况
   参考: 
+ 
+情况:
+  我现在在本地dev分支上有多个文件的修改,但还都未add,比如,改了1,2,3.py,但我接下来要切换到master分支或者pull下远程dev,要怎么办?
+  1.不想撤销本地的修改,但也不想add,commit,因为接下来有可能还要继续改
+  2.不要本地的修改了,直接全部恢复
+操作:
+  针对1:
+  用 git stash 先保存到stash里,保存之后可切换到master分支,
+  在master工作完成后,换回dev分支,用git stash list查看stash列表,可用 git stash pop恢复最近的一个
+  恢复完成后,可以选择用git stash clear去清空stash列表,这样就和之前一样干净了
+  针对2:
+  用 git checkout .将本地的修改全部撤销掉
   
  
 ==========================
@@ -67,4 +79,7 @@ git checkout dev
   执行git rebase --abort 
   因为rebase将你转移到非分支区域，所以你必须使用git rebase --abort命令中止最后一个rebase，并检出一个分支去分支并开始新的rebound
   参考:https://stackoverflow.com/questions/8895915/git-rebase-and-deleted-rebasing-branches-causing-interactive-rebase-already-sta?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+
+
 
