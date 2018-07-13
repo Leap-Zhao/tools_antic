@@ -10,5 +10,6 @@ ctrl + shift + /: 注释当前选择的代码块
 ctrl + d: 删除当前行
 ctrl + e:在打开的多个编辑页面之间转换
 alt  + 上或下: 转换到上一个或下一个编辑页面
-ctrl + h:搜索文件
+ctrl + h: 全局搜索
+ctrl + shift + r : 按文件名查找文件
 
