@@ -27,4 +27,6 @@ ctrl + shift + r 按文件名查找文件
 6. alt  + 上或下: 基本一样,但是pycharm下是把当前行或函数直接上下移动,而eclipse始终是移动一行
 
 
-
+原来就不是eclipse的:
+1. command + [ 或 win + [ : select previous tab  切换到上一个tab标签页
+2. command + ] 或 win + ] : select next tab  要换到下一个tab标签页
