@@ -1,0 +1,76 @@
+
+## 1.mac 下的常用快捷键
+----------------------------
+
+### 桌面相关 
+  - 打开Finder : option + command + 空格
+  - 回到桌面  :
+  - 切换输入法  : control + 空格
+  - 切换应用    : command + tab 
+  - 退出应用    : command + q
+  - 定位到应用的顶部菜单栏: fn + control + f2 (没有fn时为control + f2)
+  - 快速回到桌面 : fn + f11 (多按两次可来回切换)
+  - 窗口最小化 : command + m (再次按并不能返回窗口,须用鼠标点击才可打开)
+  - 隐藏当前窗口 : command + h (再次按并不能返回窗口,但tab+command可以打开)
+  - 隐藏除当前窗口外的其它窗口: command + option + h
+  - 窗口最大化,再按还原: control + command + f
+  - 打开终端: 先command+空格,打开搜索栏,再输入ter,回车即可
+  - 打开搜索栏 : command + 空格
+
+
+### 触控板相关
+
+### sublime相关
+
+1. 将屏分为n列: option + command + n
+2. 将一个文件切换到第n列屏上: control + shift + n
+2. 切换到第n列: ctrl + n 
+2. 在一个屏中切换到第n个窗口: command + n 
+3. 在一个屏中相互切换: control + tab
+
+4. 新建一个文件: command + n
+5. 关闭当前文件: command + w
+6. 保存当前文件: command + s
+
+7. 查找一个文件 command + shift + f
+
+8. 回到行首 command + 左方向键
+   回到行尾 command + 右方向键
+   回到文件头 command + 上方向
+   回到文件尾 command + 下方向
+
+
+### chrome相关
+1.打开一个新标签页: command + t
+  关闭一个标签页 :  command + w
+2.在一个屏中相互切换标签页: control + tab
+3.在一个屏中切换到第n个标签页: command + n 
+
+### pycharm快捷键
+
+
+## 2.mac下常用设置
+------------------------
+
+苹果Mac电脑如何设置快速返回桌面: 
+https://jingyan.baidu.com/article/4ae03de3d511c23eff9e6bb5.html
+
+Mac OS如何自动显示隐藏Dock:
+https://jingyan.baidu.com/article/e4511cf35637e72b845eafad.html
+
+mac下添加subl命令行:
+https://blog.csdn.net/lkj345/article/details/50894621
+
+mac 下多屏操作自动定位鼠标:catch mouse软件
+http://www.xdowns.com/soft/184/apple/2016/Soft_155395.html
+
+pycharm 设置不自动保存:
+https://blog.csdn.net/feixiaohuijava/article/details/52624214
+注:
+Save files on frame deactivation不用勾选
+
+pycharm 下安装vim编辑器:
+https://jingyan.baidu.com/article/ed15cb1bbd30591be36981ea.html
+
+使用PyCharm进行远程开发和调试:
+https://blog.csdn.net/ll641058431/article/details/53049453
