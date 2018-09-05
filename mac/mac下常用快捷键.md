@@ -6,7 +6,8 @@
 
   - 回到桌面   :
   - 切换输入法 : control + 空格
-  - 切换应用   : command + tab 
+  - 切换应用   : command + tab
+  - 同一应用的不同窗口切换: command + ~
   - 退出应用   : command + q
   - 定位到应用的顶部菜单栏: fn + control + f2 (没有fn时为control + f2)
   - 快速回到桌面 : fn + f11 (多按两次可来回切换)
