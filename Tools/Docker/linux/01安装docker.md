@@ -1,4 +1,5 @@
 ## 0.软件说明
+- docker官方网址: [https://docs.docker.com/](https://docs.docker.com/)
     #### 0-1
     #### 0-2 docker-compose
     - docker-compose 是个官方提供管理镜像的工具,对镜像进行一些编排,减化docker使用命令等功能　　 
