@@ -1,4 +1,7 @@
 
+- [git 本地分支与远程分支关联的一种方法](https://www.cnblogs.com/a-flydog/p/5520999.html)
+- [git stash相关](https://blog.csdn.net/wh_19910525/article/details/7784901)
+
 情况1:
   在本地电脑上有一个项目文件project,想将其放到github上托管
 操作:
