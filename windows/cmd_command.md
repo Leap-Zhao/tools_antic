@@ -10,5 +10,5 @@
   - 开启关闭mysql  net start mysql / net stop mysql
   - 开启关闭apache2 net start apache2 /net stop apache2
   - mac下开启apache2服务的命令为 sudo apachectl start
- 
+
   

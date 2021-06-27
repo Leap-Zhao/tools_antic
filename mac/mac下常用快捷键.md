@@ -25,25 +25,6 @@
 
 ### 触控板相关
 
-### sublime相关
-
-1. 将屏分为n列: option + command + n
-2. 将一个文件切换到第n列屏上: control + shift + n
-2. 切换到第n列: ctrl + n 
-2. 在一个屏中切换到第n个窗口: command + n 
-3. 在一个屏中相互切换: control + tab
-
-4. 新建一个文件: command + n
-5. 关闭当前文件: command + w
-6. 保存当前文件: command + s
-
-7. 查找一个文件 command + shift + f
-
-8. 回到行首 command + 左方向键
-   回到行尾 command + 右方向键
-   回到文件头 command + 上方向
-   回到文件尾 command + 下方向
-
 
 ### chrome相关
 1.打开一个新标签页: command + t
